@@ -1,4 +1,4 @@
-package main
+package codego
 
 import (
 	"fmt"
@@ -14,10 +14,10 @@ import (
 输出：[8,9,9,9,0,0,0,1]
 **/
 
-func main() {
-	var t *two_num_sum
-	t.test()
-}
+// func main() {
+// 	var t *two_num_sum
+// 	t.test()
+// }
 
 type two_num_sum struct{}
 

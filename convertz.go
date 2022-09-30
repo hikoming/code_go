@@ -1,20 +1,16 @@
-package main
+package codego
 
-import (
-	"fmt"
-)
-
-func main() {
-	var c *convertz
-	// fmt.Println(long.lengthOfLongestSubString("ertyuioplkjhgfghuioiuytr"))
-	// fmt.Println(long.lengthOfLongestSubString("aaaaaabbbbbbcccccdfghhhj"))
-	fmt.Println(c.convert("asdfghskl"))
-}
+// func main() {
+// 	var c *convertz
+// 	// fmt.Println(long.lengthOfLongestSubString("ertyuioplkjhgfghuioiuytr"))
+// 	// fmt.Println(long.lengthOfLongestSubString("aaaaaabbbbbbcccccdfghhhj"))
+// 	fmt.Println(c.convert("asdfghskl"))
+// }
 
 type convertz struct{}
 
-func (c *convertz) convert(s string, numRows int) string {
-	index := 0
+func (c *convertz) convert(s string, numRows int) {
+	// index := 0
 	str := ""
 	for i := 0; i < numRows; i++ {
 		jiange := numRows*2 - 1
@@ -23,7 +19,7 @@ func (c *convertz) convert(s string, numRows int) string {
 			n++
 		}
 		for i := 0; i < n; i++ {
-			str += s[i]
+			str += string(s[i])
 		}
 
 	}

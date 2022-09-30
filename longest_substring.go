@@ -1,7 +1,6 @@
-package main
+package codego
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -13,12 +12,12 @@ import (
 输出：[8,9,9,9,0,0,0,1]
 **/
 
-func main() {
-	var long *longest_substring
-	fmt.Println(long.lengthOfLongestSubString("ertyuioplkjhgfghuioiuytr"))
-	fmt.Println(long.lengthOfLongestSubString("aaaaaabbbbbbcccccdfghhhj"))
-	fmt.Println(long.lengthOfLongestSubString("asdfghskl"))
-}
+// func main() {
+// 	var long *longest_substring
+// 	fmt.Println(long.lengthOfLongestSubString("ertyuioplkjhgfghuioiuytr"))
+// 	fmt.Println(long.lengthOfLongestSubString("aaaaaabbbbbbcccccdfghhhj"))
+// 	fmt.Println(long.lengthOfLongestSubString("asdfghskl"))
+// }
 
 type longest_substring struct{}
 
