@@ -1,5 +1,7 @@
 package codego
 
+import "strings"
+
 func isPalindrome(s string) bool {
 	var sgood string
 	n := len(s)
@@ -9,6 +11,7 @@ func isPalindrome(s string) bool {
 		}
 	}
 	n = len(sgood)
+	sgood = strings.ToLower(sgood)
 	for i := 0; i < n/2; i++ {
 		if sgood[i] != sgood[n-i-1] {
 			return false
